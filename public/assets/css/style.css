@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700');
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'Miriam Libre';
+}
+
+/* MENUS */
+nav {
+  margin-bottom: 3em;
+}
+
+nav::before {
+  content: ' ';
+  display: block;
+  height: 1em;
+  background: linear-gradient(to right, #F35354, #EF8054);
+}
+
+nav.subnav {
+  margin-top: -3em;
+  border-bottom: 3px solid #F35354;
+}
+
+nav.subnav::before {
+  display: none; /* retire la barre de couleur */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #CCC;
+  border-right: none;
+  flex-grow: 1;
+  text-align: center;
+  height: 50px;
+}
+
+.menu .title {
+  flex-grow: 5;
+}
+
+.menu .search input {
+  border: none;
+  outline: none;
+}
+
+.menu:last-child div {
+  border-top: none;
+}
+
+.menu-hover:hover {
+  background-color: #F0F0F0;
+  color: #ED764B;
+  cursor: pointer;
+}
+
+.menu div.search-results {
+  position: absolute;
+  display: none;
+  width: 170px;
+  top: 60px;
+}
+
+.search-results li:hover {
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+/* CONTENU */
+main {
+
+}
+
+.box {
+  background-color: #eaeaea;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.box img {
+  border: 1px solid #CCC;
+}
+
+.area {
+  background-color: white;
+  box-shadow: 0 0 1em #CCC;
+  padding: 1em;
+}
+
+.area h3 {
+  font-size: 1.5em;
+}
+
+.area h3::after {
+  content: ' ';
+  display: block;
+  height: .2em;
+  background: linear-gradient(to right, #F35354, #EF8054);
+}
+
+
+.area ul {
+  margin: 2em 0 1em 2em;
+  font-size: .8em;
+  list-style: initial;
+}
+
+.area p {
+  font-size: .9em;
+}
+
+.card {
+  width: 10em;
+}
+
+/* Google maps */
+.map {
+  width :100%;
+  height: 200px;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #e3e3e3;
+  padding: .4em;
+  font-size: .8em;
+  text-align: center;
+}
+
+/* @author Malycia */
+.menu .menu-hover a {
+  color: black;
+  text-decoration: none;
+}
+
+/* -- Google MAPS */
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
